@@ -4,9 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Abhishek Jain - R3_b0ot | Frontend Developer specializing in UI/UX design, web development, and creating pixel-perfect digital experiences.">
+    <meta name="keywords" content="Abhishek Jain, R3_b0ot, frontend developer, UI UX designer, web developer, portfolio">
+    <meta name="author" content="Abhishek Jain">
+    <meta name="robots" content="index, follow">
+
+    <!--=============== OPEN GRAPH ===============-->
+    <meta property="og:title" content="Abhishek Jain - R3_b0ot">
+    <meta property="og:description" content="Frontend Developer & UI/UX Designer crafting pixel-perfect digital experiences.">
+    <meta property="og:image" content="https://r3-b0ot.github.io/assets/img/perfil.png">
+    <meta property="og:url" content="https://r3-b0ot.github.io">
+    <meta property="og:type" content="website">
+
+    <!--=============== TWITTER CARD ===============-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Abhishek Jain - R3_b0ot">
+    <meta name="twitter:description" content="Frontend Developer & UI/UX Designer crafting pixel-perfect digital experiences.">
+    <meta name="twitter:image" content="https://r3-b0ot.github.io/assets/img/perfil.png">
 
     <!--=============== FAVICON ===============-->
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!--=============== PRECONNECT ===============-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://unpkg.com">
 
     <!--=============== BOXICONS ===============-->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
@@ -17,7 +39,7 @@
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css">
 
-    <title> Abhishek Jain - R3_b0ot</title>
+    <title>Abhishek Jain - R3_b0ot</title>
 </head>
 
 <body>
@@ -26,40 +48,40 @@
         <nav class="nav container">
             <a href="#" class="nav__logo">Abhishek</a>
 
-            <div class="nav__menu">
+            <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link active-link">
+                        <a href="#home" class="nav__link active-link" aria-label="Home">
                             <i class='bx bx-home-alt'></i>
                         </a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="#about" class="nav__link">
+                        <a href="#about" class="nav__link" aria-label="About">
                             <i class='bx bx-user'></i>
                         </a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="#skills" class="nav__link">
+                        <a href="#skills" class="nav__link" aria-label="Skills">
                             <i class='bx bx-book'></i>
                         </a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="#work" class="nav__link">
+                        <a href="#work" class="nav__link" aria-label="Work">
                             <i class='bx bx-briefcase-alt-2'></i>
                         </a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="#projects" class="nav__link">
+                        <a href="#projects" class="nav__link" aria-label="Projects">
                             <i class='bx bx-export'></i>
                         </a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="#contact" class="nav__link">
+                        <a href="#contact" class="nav__link" aria-label="Contact">
                             <i class='bx bx-message-square-detail'></i>
                         </a>
                     </li>
@@ -68,7 +90,7 @@
             </div>
 
             <!--Theme Change Button-->
-            <i class='bx bx-moon change-theme' id="theme-button"></i>
+            <i class='bx bx-moon change-theme' id="theme-button" role="button" aria-label="Toggle theme" tabindex="0"></i>
         </nav>
     </header>
 
@@ -91,7 +113,7 @@
                 </div>
 
                 <div class="home__handle">
-                    <img src="assets/img/perfil.png" alt="" class="home__img">
+                    <img src="assets/img/perfil.png" alt="Abhishek Jain profile photo" class="home__img">
                 </div>
 
                 <div class="home__social">
@@ -119,7 +141,7 @@
 
 
             <div class="about__container container grid">
-                <img src="assets/img/about.jpg" alt="" class="about__img">
+                <img src="assets/img/about.jpg" alt="Abhishek Jain working" class="about__img">
                 <div class="about__data">
                     <div class="about__info">
                         <div class="about__box">
@@ -466,27 +488,27 @@
 
             <div class="work__container container grid">
                 <div class="work__card mix web">
-                    <img src="assets/img/work1.jpg" alt="" class="work__img">
+                    <img src="assets/img/work1.jpg" alt="RCHC website project screenshot" class="work__img">
 
                     <h3 class="work__title">RCHC Website</h3>
 
-                    <a href="https://www.rchinduja.com/" class="work__button" target="_blank">
+                    <a href="https://www.rchinduja.com/" class="work__button" target="_blank" rel="noopener noreferrer">
                         Visit Website <i class='bx bx-right-arrow-alt work__icon'></i>
                     </a>
                 </div>
 
                 <div class="work__card mix movil">
-                    <img src="assets/img/work2.jpg" alt="" class="work__img">
+                    <img src="assets/img/work2.jpg" alt="KBC Emulator app screenshot" class="work__img">
 
                     <h3 class="work__title">KBE - A KBC Emulator</h3>
 
-                    <a href="https://github.com/R3-b0ot/KBE" class="work__button" target="_blank">
+                    <a href="https://github.com/R3-b0ot/KBE" class="work__button" target="_blank" rel="noopener noreferrer">
                         Check Source Code <i class='bx bx-right-arrow-alt work__icon'></i>
                     </a>
                 </div>
 
                 <div class="work__card mix design">
-                    <img src="assets/img/work3.jpg" alt="" class="work__img">
+                    <img src="assets/img/work3.jpg" alt="Brand design portfolio piece" class="work__img">
 
                     <h3 class="work__title">Brand Design</h3>
 
@@ -496,9 +518,9 @@
                 </div>
 
                 <div class="work__card mix web">
-                    <img src="assets/img/work4.jpg" alt="" class="work__img">
+                    <img src="assets/img/work4.jpg" alt="Web design project preview" class="work__img">
 
-                    <h3 class="work__title">Web design</h3>
+                    <h3 class="work__title">Web Design</h3>
 
                     <a href="#" class="work__button">
                         Demo <i class='bx bx-right-arrow-alt work__icon'></i>
@@ -506,7 +528,7 @@
                 </div>
 
                 <div class="work__card mix movil">
-                    <img src="assets/img/work5.jpg" alt="" class="work__img">
+                    <img src="assets/img/work5.jpg" alt="Mobile app design preview" class="work__img">
 
                     <h3 class="work__title">App Movil</h3>
 
@@ -520,9 +542,33 @@
         <!--=============== PROJECTS ===============-->
         <section class="project section" id="projects">
             <span class="section__subtitle">My Individual Projects</span>
-            <h2 class="section__title">Recent Works</h2>
+            <h2 class="section__title">Personal Projects</h2>
 
+            <div class="work__container container grid">
+                <div class="work__card mix web">
+                    <img src="assets/img/work1.jpg" alt="RCHC Website screenshot" class="work__img">
+                    <h3 class="work__title">RCHC Website</h3>
+                    <a href="https://www.rchinduja.com/" class="work__button" target="_blank" rel="noopener noreferrer">
+                        Visit Website <i class='bx bx-right-arrow-alt work__icon'></i>
+                    </a>
+                </div>
 
+                <div class="work__card mix movil">
+                    <img src="assets/img/work2.jpg" alt="KBE - KBC Emulator app screenshot" class="work__img">
+                    <h3 class="work__title">KBE - A KBC Emulator</h3>
+                    <a href="https://github.com/R3-b0ot/KBE" class="work__button" target="_blank" rel="noopener noreferrer">
+                        View Source <i class='bx bx-right-arrow-alt work__icon'></i>
+                    </a>
+                </div>
+
+                <div class="work__card mix design">
+                    <img src="assets/img/work3.jpg" alt="Brand design project" class="work__img">
+                    <h3 class="work__title">Brand Identity Design</h3>
+                    <a href="#" class="work__button">
+                        View Project <i class='bx bx-right-arrow-alt work__icon'></i>
+                    </a>
+                </div>
+            </div>
         </section>
 
         <!--=============== TESTIMONIALS ===============-->
@@ -533,7 +579,7 @@
             <div class="testimonial__container container swiper">
                 <div class="swiper-wrapper">
                     <div class="testimonial__card swiper-slide">
-                        <img src="assets/img/testimonial1.png" alt="" class="testimonial__img">
+                        <img src="assets/img/testimonial1.png" alt="John Doe testimonial" class="testimonial__img">
 
                         <h3 class="testimonials__name">John Doe</h3>
                         <p class="testimonials__description">
@@ -542,7 +588,7 @@
                     </div>
 
                     <div class="testimonial__card swiper-slide">
-                        <img src="assets/img/testimonial2.png" alt="" class="testimonial__img">
+                        <img src="assets/img/testimonial2.png" alt="Paula Vusy testimonial" class="testimonial__img">
 
                         <h3 class="testimonials__name">Paula Vusy</h3>
                         <p class="testimonials__description">
@@ -551,7 +597,7 @@
                     </div>
 
                     <div class="testimonial__card swiper-slide">
-                        <img src="assets/img/testimonial3.png" alt="" class="testimonial__img">
+                        <img src="assets/img/testimonial3.png" alt="Sara Cill testimonial" class="testimonial__img">
 
                         <h3 class="testimonials__name">Sara Cill</h3>
                         <p class="testimonials__description">
@@ -612,18 +658,18 @@
 
                     <form action="https://formsubmit.co/abhishek.aj64@gmail.com" method="POST" class="contact__form">
                         <div class="contact__form-div">
-                            <label for="" class="contact__form-tag">Name</label>
-                            <input type="text" placeholder="Insert your Name" class="contact__form-input" name="name">
+                            <label for="name" class="contact__form-tag">Name</label>
+                            <input type="text" id="name" placeholder="Insert your Name" class="contact__form-input" name="name" required>
                         </div>
 
                         <div class="contact__form-div">
-                            <label for="" class="contact__form-tag">Mail</label>
-                            <input type="email" placeholder="Insert your E-Mail" class="contact__form-input" name="email">
+                            <label for="email" class="contact__form-tag">Mail</label>
+                            <input type="email" id="email" placeholder="Insert your E-Mail" class="contact__form-input" name="email" required>
                         </div>
 
                         <div class="contact__form-div contact__form-area">
-                            <label for="" class="contact__form-tag">Project</label>
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Write Your Project" class="contact__form-input" name="project"></textarea>
+                            <label for="project" class="contact__form-tag">Project</label>
+                            <textarea id="project" cols="30" rows="10" placeholder="Write Your Project" class="contact__form-input" name="project" required></textarea>
                         </div>
 
                         <button class="button">Send Message</button>

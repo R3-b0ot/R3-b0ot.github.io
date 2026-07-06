@@ -145,7 +145,7 @@ body.light-theme {
 ==========*/
 
 .light-theme .scroll-header {
-    box-shadow: 02px 4px hsla(0, 0%, 1%, .1)
+    box-shadow: 0 2px 4px hsla(0, 0%, 1%, .1)
 }
 
 .light-theme .nav__menu {
@@ -200,6 +200,13 @@ body.light-theme {
     background-color: hsl(var(--second-hue), 8%, 44%);
 }
 
+
+/*=============== FOCUS STYLES ===============*/
+
+:focus-visible {
+    outline: 2px solid var(--first-color);
+    outline-offset: 2px;
+}
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 
@@ -344,6 +351,17 @@ body.light-theme {
 
 .home__name {
     font-size: var(--biggest-font-size);
+    background: linear-gradient(135deg, var(--first-color), hsl(var(--second-hue), 90%, 72%), var(--first-color));
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-shift 4s ease-in-out infinite;
+}
+
+@keyframes gradient-shift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
 }
 
 .home__img {
@@ -416,6 +434,12 @@ body.light-theme {
 
 .home__scroll-icon {
     font-size: 1.25rem;
+    animation: scroll-bounce 2s ease-in-out infinite;
+}
+
+@keyframes scroll-bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(6px); }
 }
 
 .home__scroll-name {
@@ -439,6 +463,7 @@ body.light-theme {
 .button:hover {
     background-color: var(--first-color-alt);
     color: var(--body-color);
+    transform: scale(1.05);
 }
 
 .button-ghost {
@@ -475,6 +500,12 @@ body.light-theme {
     background-color: var(--container-color);
     border-radius: .75rem;
     padding: .75rem .5rem;
+    transition: .4s;
+}
+
+.about__box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 16px hsla(var(--first-hue), var(--sat), var(--lig), .15);
 }
 
 .about__icon {
@@ -507,6 +538,12 @@ body.light-theme {
     background-color: var(--container-color);
     padding: 1.5rem;
     border-radius: 1.25rem;
+    transition: .4s;
+}
+
+.skills__content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px hsla(var(--first-hue), var(--sat), var(--lig), .15);
 }
 
 .skills__title {
@@ -562,6 +599,12 @@ body.light-theme {
     background-color: var(--container-color);
     padding: 3rem 1.5rem 1.5rem;
     border-radius: 1rem;
+    transition: .4s;
+}
+
+.services__card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px hsla(var(--first-hue), var(--sat), var(--lig), .15);
 }
 
 .services__title {
@@ -690,6 +733,12 @@ body.light-theme {
     background-color: var(--container-color);
     padding: 1rem;
     border-radius: 1rem;
+    transition: .4s;
+}
+
+.work__card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px hsla(var(--first-hue), var(--sat), var(--lig), .15);
 }
 
 .work__img {
@@ -737,6 +786,12 @@ body.light-theme {
     padding: 1.25rem 1.5rem;
     border-radius: 1.5rem;
     margin-bottom: 3rem;
+    transition: .4s;
+}
+
+.testimonial__card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px hsla(var(--first-hue), var(--sat), var(--lig), .15);
 }
 
 .testimonial__img {
@@ -790,6 +845,12 @@ body.light-theme {
     padding: 1rem;
     border-radius: .75rem;
     text-align: center;
+    transition: .4s;
+}
+
+.contact__card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px hsla(var(--first-hue), var(--sat), var(--lig), .15);
 }
 
 .contact__card-icon {
