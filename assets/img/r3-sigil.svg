@@ -1,11 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-150 -20 1570 850" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 420" role="img" aria-labelledby="title desc">
 <title id="title">R3 Sigil — Perfect Dark</title>
-<desc id="desc">The R and 3 glyph outlines from Perfect Dark BRK, interlocked into a monogram with an interrupted angular frame.</desc>
-<g fill="none" stroke="#8b5cf6" stroke-width="16" stroke-linecap="square" stroke-linejoin="miter">
-<path d="M40 40H390 M470 40H1050 M1190 40H1360V250 M1360 370V610 M1360 730V790H1050 M900 790H620 M470 790H40V590 M40 430V260 M40 170V40"/>
-</g>
-<g fill="#b69cff" transform="translate(0 720) scale(1 -1)">
-<path d="M210 0H35V490H210ZM0 560 -134 700H385L595 490L490 385H280L385 490L315 560ZM280 315V175H420L595 0H805L490 315Z"/>
-<path transform="translate(490 0)" d="M490 490V420H175L315 280H490V140H175L35 0H665V490ZM700 560H0L-136 700H840Z"/>
+<desc id="desc">Separate R and 3 glyphs drawn from the supplied Perfect Dark BRK wordmark, centered as a compact monogram.</desc>
+<g fill="#b69cff">
+  <path transform="translate(100 40) scale(.48)" d="M210 0H35V490H210ZM0 560 -134 700H385L595 490L490 385H280L385 490L315 560ZM280 315V175H420L595 0H805L490 315Z"/>
+  <path transform="translate(590 40) scale(.48)" d="M490 490V420H175L315 280H490V140H175L35 0H665V490ZM700 560H0L-136 700H840Z"/>
 </g>
 </svg>
