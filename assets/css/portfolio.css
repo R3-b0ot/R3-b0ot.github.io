@@ -132,3 +132,13 @@ html{overflow-x:clip}body{overflow-x:clip}.wrap{min-width:0}.nav{min-width:0}.wo
 .hero h1 .reboot-display img{display:block;width:min(100%,480px);height:auto;filter:drop-shadow(0 0 12px #8b5cf633)}
 .hero h1 .reboot-tomorrow{display:block;font:inherit;color:var(--lime);letter-spacing:inherit;line-height:.9;margin-top:.08em}
 @media(max-width:560px){.hero h1 .reboot-display img{width:min(100%,390px);max-height:none}}
+
+/* Glitch layers duplicate the SVG wordmark, never a plain-text fallback. */
+.boot-loader-mark{display:block;width:min(54vw,420px);font-size:0;line-height:0;letter-spacing:0;color:transparent}
+.boot-loader-mark:before,.boot-loader-mark:after{content:none!important}
+.boot-loader-mark img{display:block;width:100%;height:auto;max-height:100px;object-fit:contain}
+.boot-loader-mark .boot-mark-base{position:relative;z-index:1}
+.boot-loader-mark .boot-mark-glitch{position:absolute;left:0;top:0;width:100%;height:100%;object-fit:contain;pointer-events:none}
+.boot-loader-mark .boot-mark-glitch-a{z-index:2;opacity:.8;filter:sepia(1) saturate(5) hue-rotate(235deg);clip-path:inset(0 0 52% 0);animation:boot-slice-a .72s steps(1,end) infinite}
+.boot-loader-mark .boot-mark-glitch-b{z-index:3;opacity:.75;filter:sepia(1) saturate(8) hue-rotate(265deg);clip-path:inset(48% 0 0 0);animation:boot-slice-b .9s steps(1,end) infinite}
+@media(prefers-reduced-motion:reduce){.boot-loader-mark .boot-mark-glitch{animation:none!important}}
