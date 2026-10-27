@@ -1,1 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 300" role="img" aria-labelledby="title desc"><title id="title">R3 Sigil</title><desc id="desc">Angular R3 monogram for the R3_b0ot identity.</desc><g fill="#b69cff"><path d="M38 44H186L232 90 186 136H118L145 109H166L185 90 174 79H83V254H38Z"/><path d="M117 145H179L282 254H219Z"/><path d="M270 44H440L480 84 440 124H371L397 98H429L443 84 429 70H297Z"/><path d="M369 137H440L480 177 440 217H354L381 190H429L443 177 429 164H369Z"/><path d="M352 229H440L480 269H310L284 243 310 217H354L337 234 343 242H414L402 229Z"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-150 -20 1570 850" role="img" aria-labelledby="title desc">
+<title id="title">R3 Sigil — Perfect Dark</title>
+<desc id="desc">The R and 3 glyph outlines from Perfect Dark BRK, interlocked into a monogram with an interrupted angular frame.</desc>
+<g fill="none" stroke="#8b5cf6" stroke-width="16" stroke-linecap="square" stroke-linejoin="miter">
+<path d="M40 40H390 M470 40H1050 M1190 40H1360V250 M1360 370V610 M1360 730V790H1050 M900 790H620 M470 790H40V590 M40 430V260 M40 170V40"/>
+</g>
+<g fill="#b69cff" transform="translate(0 720) scale(1 -1)">
+<path d="M210 0H35V490H210ZM0 560 -134 700H385L595 490L490 385H280L385 490L315 560ZM280 315V175H420L595 0H805L490 315Z"/>
+<path transform="translate(490 0)" d="M490 490V420H175L315 280H490V140H175L35 0H665V490ZM700 560H0L-136 700H840Z"/>
+</g>
+</svg>
