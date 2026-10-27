@@ -9,8 +9,8 @@
    const stages=[['QUESTIONING ASSUMPTIONS','12%'],['RESETTING OLD DEFAULTS','38%'],['REIMAGINING THE POSSIBLE','67%'],['BUILDING WHAT COMES NEXT','92%']];
    loader.classList.add('is-active');
    let stage=0;
-   const interval=window.setInterval(()=>{stage=Math.min(stage+1,stages.length-1);if(status)status.textContent=stages[stage][0];if(percent)percent.textContent=stages[stage][1];},260);
-   window.setTimeout(()=>{window.clearInterval(interval);if(percent)percent.textContent='100%';loader.classList.add('is-leaving');window.setTimeout(()=>{loader.classList.remove('is-active','is-leaving');},430);},1450);
+   const interval=window.setInterval(()=>{stage=Math.min(stage+1,stages.length-1);if(status)status.textContent=stages[stage][0];if(percent)percent.textContent=stages[stage][1];},420);
+   window.setTimeout(()=>{window.clearInterval(interval);if(percent)percent.textContent='100%';loader.classList.add('is-leaving');window.setTimeout(()=>{loader.classList.remove('is-active','is-leaving');},430);},2200);
  } else if(loader){loader.remove();}
  const year=document.querySelector('[data-year]');if(year)year.textContent=String(new Date().getFullYear());
  const items=document.querySelectorAll('.reveal');
