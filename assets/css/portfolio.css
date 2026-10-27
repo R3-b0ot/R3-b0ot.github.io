@@ -142,3 +142,14 @@ html{overflow-x:clip}body{overflow-x:clip}.wrap{min-width:0}.nav{min-width:0}.wo
 .boot-loader-mark .boot-mark-glitch-a{z-index:2;opacity:.8;filter:sepia(1) saturate(5) hue-rotate(235deg);clip-path:inset(0 0 52% 0);animation:boot-slice-a .72s steps(1,end) infinite}
 .boot-loader-mark .boot-mark-glitch-b{z-index:3;opacity:.75;filter:sepia(1) saturate(8) hue-rotate(265deg);clip-path:inset(48% 0 0 0);animation:boot-slice-b .9s steps(1,end) infinite}
 @media(prefers-reduced-motion:reduce){.boot-loader-mark .boot-mark-glitch{animation:none!important}}
+
+/* Correct RGB-split glitch: all three Perfect Dark marks occupy the same grid cell. */
+.boot-loader-mark{display:grid!important;position:relative;isolation:isolate;width:min(54vw,420px);font-size:0;line-height:0;letter-spacing:0;color:transparent;text-shadow:none}
+.boot-loader-mark img{grid-area:1/1;display:block;width:100%;height:auto;max-height:100px;object-fit:contain}
+.boot-loader-mark .boot-mark-base{position:relative;z-index:1;transform:none}
+.boot-loader-mark .boot-mark-glitch{position:relative;left:auto;top:auto;width:100%;height:auto;max-height:100px;object-fit:contain;pointer-events:none;mix-blend-mode:screen}
+.boot-loader-mark .boot-mark-glitch-a{z-index:2;opacity:.85;filter:brightness(0) saturate(100%) invert(58%) sepia(90%) saturate(2350%) hue-rotate(284deg) brightness(105%);clip-path:inset(0 0 52% 0);animation:boot-rgb-left .72s steps(1,end) infinite}
+.boot-loader-mark .boot-mark-glitch-b{z-index:3;opacity:.85;filter:brightness(0) saturate(100%) invert(47%) sepia(92%) saturate(2600%) hue-rotate(232deg) brightness(105%);clip-path:inset(48% 0 0 0);animation:boot-rgb-right .9s steps(1,end) infinite}
+@keyframes boot-rgb-left{0%,72%,100%{transform:translate(0,0);clip-path:inset(0 0 52% 0)}73%{transform:translate(-5px,-1px);clip-path:inset(12% 0 62% 0)}75%{transform:translate(3px,1px);clip-path:inset(38% 0 43% 0)}77%{transform:translate(-2px,0);clip-path:inset(0 0 52% 0)}}
+@keyframes boot-rgb-right{0%,66%,100%{transform:translate(0,0);clip-path:inset(48% 0 0 0)}67%{transform:translate(5px,1px);clip-path:inset(55% 0 24% 0)}69%{transform:translate(-3px,-1px);clip-path:inset(72% 0 0 0)}71%{transform:translate(2px,0);clip-path:inset(48% 0 0 0)}}
+@media(prefers-reduced-motion:reduce){.boot-loader-mark .boot-mark-glitch{animation:none!important;transform:none!important}}
