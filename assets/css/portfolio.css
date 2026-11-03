@@ -441,3 +441,7 @@ html[data-theme="light"] .button{color:#fff}html[data-theme="light"] .button:hov
 .work-grid{gap:28px 14px}.work-card,.work-card.wide,.work-card.narrow{grid-column:span 12}.work-cover{height:auto;aspect-ratio:1.25}.about-grid{gap:22px}.capabilities{grid-template-columns:1fr}.capability,.capability:nth-child(even){padding:22px 0;border-left:0}
 .timeline-row{grid-template-columns:1fr;gap:8px}.timeline-date{grid-column:1;grid-row:auto;text-align:left}.timeline-row>div:nth-child(2){grid-column:1}.case-content{grid-template-columns:1fr;gap:20px}}
 @media(prefers-reduced-motion:reduce){.ticker-track{animation:none!important}.sigil-layer-a,.sigil-layer-b{display:none!important}}
+
+/* Dot-grid glyph sizing and alignment */
+.ticker-glyph{display:inline-flex;align-items:center;vertical-align:middle;margin-left:20px;font-size:0}
+.dot-glyph{display:block;width:14px;height:14px;color:var(--signal);overflow:visible}
