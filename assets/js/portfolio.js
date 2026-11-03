@@ -4,7 +4,14 @@
  toggle.addEventListener('click',()=>{const open=nav.classList.toggle('is-open');document.body.classList.toggle('menu-open',open);toggle.setAttribute('aria-expanded',String(open))});
  nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',close));document.addEventListener('keydown',e=>{if(e.key==='Escape')close()});window.addEventListener('resize',()=>{if(innerWidth>560)close()})}
  const loader=document.querySelector('[data-boot-loader]');
- if(loader&&!matchMedia('(prefers-reduced-motion: reduce)').matches){
+ let showBootLoader=false;
+ if(loader){
+   try{
+     showBootLoader=sessionStorage.getItem('r3b0ot-loader-seen')!=='1';
+     if(showBootLoader)sessionStorage.setItem('r3b0ot-loader-seen','1');
+   }catch(error){showBootLoader=true;}
+ }
+ if(loader&&showBootLoader&&!matchMedia('(prefers-reduced-motion: reduce)').matches){
    const status=loader.querySelector('[data-boot-status]'),percent=loader.querySelector('[data-boot-percent]');
    const stages=[['QUESTIONING ASSUMPTIONS','12%'],['RESETTING OLD DEFAULTS','38%'],['REIMAGINING THE POSSIBLE','67%'],['BUILDING WHAT COMES NEXT','92%']];
    loader.classList.add('is-active');
