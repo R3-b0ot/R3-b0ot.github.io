@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DotGothic16&family=Manrope:wght@400;500;600;700;800&family=Share+Tech+Mono&display=swap');
 :root{--bg:#10110f;--surface:#191a17;--surface2:#22231f;--ink:#f4f2e9;--muted:#a8a99e;--line:#383a32;--lime:#b69cff;--orange:#f0abfc;--purple-deep:#21153f;--purple-glow:#8b5cf6;--max:1240px;--mono:"DM Mono",monospace;--sans:Manrope,Arial,sans-serif}
 *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.55;-webkit-font-smoothing:antialiased}body.menu-open{overflow:hidden}a{color:inherit;text-decoration:none}img{max-width:100%;display:block}button,a{-webkit-tap-highlight-color:transparent}button{font:inherit}.wrap{width:min(var(--max),calc(100% - 56px));margin-inline:auto}.mono,.eyebrow,.kicker{font-family:var(--mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.13em;color:var(--muted)}.accent{color:var(--lime)}.skip-link{position:absolute;left:12px;top:-60px;background:var(--lime);color:#111;padding:12px;z-index:100}.skip-link:focus{top:12px}
 .site-header{height:78px;position:sticky;top:0;z-index:30;background:rgba(16,17,15,.88);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.08)}.nav{height:100%;display:flex;align-items:center;justify-content:space-between;gap:24px}.wordmark{font-size:1.05rem;font-weight:800;letter-spacing:-.07em}.wordmark span{color:var(--lime)}.nav-links{display:flex;gap:30px;align-items:center}.nav-links a{font-size:.82rem;color:#cbcbbf;transition:color .2s}.nav-links a:hover,.nav-links a[aria-current=page]{color:var(--lime)}.nav-contact{padding:10px 15px;border:1px solid #56584e;border-radius:99px;font-size:.78rem}.nav-contact:hover{color:#111;background:var(--lime);border-color:var(--lime)}.menu-toggle{display:none;border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:99px;padding:9px 12px}
@@ -314,3 +314,58 @@ body:before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;bac
  .manifesto-bottomline{display:flex;flex-wrap:wrap;gap:12px}
 }
 @media(prefers-reduced-motion:reduce){.cover-type{animation:none!important}}
+
+
+/* Dot-matrix typography layer — instrument labels, system readouts and navigation */
+:root{
+  --dot: "DotGothic16", "DM Mono", monospace;
+  --terminal: "Share Tech Mono", "DM Mono", monospace;
+}
+.mono,.eyebrow,.kicker,
+.manifesto-kicker,.manifesto-code,.manifesto-code-state,
+.terminal-title,.terminal-live,.terminal-time,.terminal-prompt,
+.terminal-ok,.terminal-warn,.terminal-arrow,.terminal-footer,
+.manifesto-bottomline,.cover-tag,.cover-type small,
+.work-index,.cap-number,.timeline-date,.case-sidebar,
+.case-stat span,.back-link,.text-link,.orbit-index,
+.sigil-side-label,.sigil-caption,.boot-loader-label,
+.boot-loader-status,.boot-loader-foot{
+  font-family:var(--dot)!important;
+  letter-spacing:.045em;
+}
+.nav-links a,.nav-contact,.menu-toggle,
+.button,.pill,.work-meta p,.note,
+.case-intro,.case-body h2{
+  font-family:var(--terminal)!important;
+}
+.eyebrow,.mono,.kicker,.manifesto-kicker,
+.cover-tag,.cap-number,.timeline-date,
+.case-sidebar,.case-stat span,.work-index{
+  text-transform:uppercase;
+  letter-spacing:.09em;
+}
+.hero .eyebrow,.section-head .mono,.manifesto-kicker{
+  color:#cdb7ff;
+}
+.terminal-titlebar,.manifesto-code,.boot-loader-status{
+  font-family:var(--dot)!important;
+}
+.ticker-track span{
+  font-family:var(--dot);
+  font-weight:400;
+  letter-spacing:.025em;
+}
+.work-meta h3,.capability h3,.timeline-row h3{
+  letter-spacing:-.025em;
+}
+.sigil-system{
+  background-image:radial-gradient(circle,rgba(196,181,253,.26) .75px,transparent .9px);
+  background-size:8px 8px;
+}
+.manifesto-terminal,.terminal-screen{
+  background-image:radial-gradient(circle,rgba(196,181,253,.10) .65px,transparent .85px);
+  background-size:7px 7px;
+}
+@media(max-width:620px){
+  .nav-links a,.nav-contact,.menu-toggle,.button{letter-spacing:.025em}
+}
